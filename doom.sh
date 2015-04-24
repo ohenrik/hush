@@ -14,7 +14,7 @@ while true; do
   #echo $threshold
   c=$(echo "$value > $threshold " | bc)
   if [ $c = '1' ]
-  then 
+  then
     pmset displaysleepnow
   fi
 done

@@ -13,4 +13,7 @@ http://superuser.com/questions/545329/how-do-i-make-a-machine-blank-screen-for-a
 ## Solution based off this answer on SuperUser.com:
 http://superuser.com/a/545334/145341
 
+To run silently type `nohup sh doom.sh &` and then close the terminal. :D
+Remember to note down the PID to kill the process with `kill <pid>`
 
+If you forget the PID use `ps -a` and search the list for `sh doom.sh` and read the PID from the first column
