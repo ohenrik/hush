@@ -15,6 +15,7 @@ while true; do
   c=$(echo "$value > $threshold " | bc)
   if [ $c = '1' ]
   then
+    osascript -e "set Volume 8"
     afplay scream.mp3
     pmset displaysleepnow
   fi
