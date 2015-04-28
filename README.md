@@ -18,4 +18,6 @@ Remember to note down the PID to kill the process with `kill <pid>`
 
 If you forget the PID use `ps -ax` and search the list for `doom.sh` and read the PID from the first column
 
-nohup sh doom.sh 0.02 &
+type `sh run.sh` to run with default values and nohup
+
+nohup sh doom.sh 0.03 &
