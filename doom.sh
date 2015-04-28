@@ -15,6 +15,7 @@ while true; do
   c=$(echo "$value > $threshold " | bc)
   if [ $c = '1' ]
   then
+    afplay scream.mp3
     pmset displaysleepnow
   fi
 done
