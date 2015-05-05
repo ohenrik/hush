@@ -6,6 +6,15 @@ while true; do
   then
      threshold=0.02
   fi
+
+  sleep_bool=$2
+  if [ -z "$sleep_bool" ]
+    sleep_bool=1
+  then
+     sleep_bool=0
+  fi
+
+
   printf "Listening...\r"
   sleep 1
   ./sox/rec -q ./test.wav trim 0 00:02
@@ -17,6 +26,8 @@ while true; do
   then
     osascript -e "set Volume 8"
     afplay scream.mp3
-    pmset displaysleepnow
+    open -a Preview private-wilhelm.jpg
+    /usr/bin/osascript -e 'tell application "Preview"' -e "activate" -e 'tell application "System Events"' -e 'keystroke "f" using {control down, command down}' -e "end tell" -e "end tell"
   fi
+
 done
