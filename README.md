@@ -7,6 +7,8 @@ Run the script from the terminal using `sh doom.sh 0.05`
 
 where 0.05 is the RMS amplitude.
 
+test
+
 ## Idea taken from this question on SuperUser.com:
 http://superuser.com/questions/545329/how-do-i-make-a-machine-blank-screen-for-a-period-of-time-as-a-penalty-if-ce
 
